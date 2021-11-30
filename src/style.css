@@ -1,0 +1,62 @@
+:root {
+  --firstButton-color: blueviolet;
+  --secondButton-color: white;
+  --primary-color: #4d4d4d;
+  --firstBorder-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 48px;
+  color: var(--primary-color);
+}
+.description {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.primary-link,
+.contact-link,
+.about-link {
+  text-decoration: none;
+  color: var(--secondButton-color);
+  background-color: var(--firstButton-color);
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid var(--firstButton-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+.contact-link:hover {
+  color: var(--secondButton-color);
+}
+
+.about-link {
+  text-decoration: none;
+  color: var(--firstButton-color);
+  background-color: var(--secondButton-color);
+}
+
+.about-link:hover {
+  color: var(--firstButton-color);
+}
+
+@media (max-width: 768px) {
+  p,
+  h2 {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 5px 20px;
+  }
+}
